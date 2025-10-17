@@ -6,7 +6,6 @@
              x:Class="ResturantReserve.Views.LoginPage"
              x:DataType="vm:LoginPageVM">
     <VerticalStackLayout>
-        <Entry Placeholder="{x:Static m:Strings.Name}" Text="{Binding Name}" />
         <Entry Placeholder="{x:Static m:Strings.Email}" Text="{Binding Email}" />
         <Entry Placeholder="{x:Static m:Strings.Password}" Text="{Binding Password}" />
         <Button Text="{x:Static m:Strings.Login}" Command="{Binding LoginCommand}"/>

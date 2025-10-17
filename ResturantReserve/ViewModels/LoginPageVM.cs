@@ -5,7 +5,7 @@ using Microsoft.Maui.Storage;
 
 namespace ResturantReserve.ViewModels
 {
-    internal partial class LoginPageVM : ObservableObject
+    public partial class LoginPageVM: ObservableObject
     {
         private User user = new();
         public ICommand LoginCommand { get; set; }
@@ -18,6 +18,7 @@ namespace ResturantReserve.ViewModels
                 if (user.Email != value)
                 {
                     user.Email = value;
+                    OnPropertyChanged();
                     (LoginCommand as Command)?.ChangeCanExecute();
                 }
             }
@@ -32,6 +33,7 @@ namespace ResturantReserve.ViewModels
                 if (user.Password != value)
                 {
                     user.Password = value;
+                    OnPropertyChanged();
                     (LoginCommand as Command)?.ChangeCanExecute();
                 }
             }
