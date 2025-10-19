@@ -1,9 +1,10 @@
 ﻿using ResturantReserve.Models;
 using System.Windows.Input;
+using ResturantReserve.ModelsLogic;
 
 namespace ResturantReserve.ViewModels
 {
-    public partial class RegisterPageVM: ObservableObject
+    public partial class RegisterPageVM : ObservableObject
     {
 
         private readonly User user = new();
@@ -66,6 +67,12 @@ namespace ResturantReserve.ViewModels
         public RegisterPageVM()
         {
             RegisterCommand = new Command(Register, CanRegister);
+        }
+        public bool IsPassword { get; set; } = true;
+        private void ToggleIsPassword()
+        {
+            IsPassword = !IsPassword;
+            OnPropertyChanged(nameof(IsPassword));
         }
     }
 }

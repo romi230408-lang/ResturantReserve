@@ -8,5 +8,15 @@
         public const string RememberMeKey = "Remember me";
         public const string FbApiKey = "AIzaSyAj2XNl3sLDnM4DaCQX4kGnYSsmxaWVphY";
         public const string FbAppDomainKey = "resturantreserve.firebaseapp.com";
+        public const string MessageKey = "Message:";
+        public const string ErrorsKey = "Reason:";
+        public const string ReasonKey = "Reason:";
+        public const string Apostrophe = "'";
+        public const string Colon = ":";
+        public const string Comma = ",";
+        public const string TitleDelimiter = " ";
+        public const string WordsDelimiter = " ";
+        public const string UpperCaseDelimiter = @"(?=[A-Z])";
+        public const string NewLine = "\n";
     }
 }

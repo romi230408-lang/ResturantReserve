@@ -14,8 +14,8 @@
         public const string Error = "Error";
         public const string Ok = "Ok";
         public const string Success = "Success";
-        
-            public const string UserSignedIn = "User Signed in";
+        public const string UserSignedIn = "User Signed in";
         public const string UserRegistered = "User Registered";
+        public const string UnknownError = "Unknown Error";
     }
 }

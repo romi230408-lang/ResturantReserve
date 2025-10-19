@@ -7,9 +7,9 @@
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:508817033327:android:e3caaf3005b294f6f5e59a",
+        "mobilesdk_app_id": "1:508817033327:android:de47b7c53fa9839ff5e59a",
         "android_client_info": {
-          "package_name": "com.mycompany.myapp"
+          "package_name": "com.meitar.resturantreserve"
         }
       },
       "oauth_client": [],
